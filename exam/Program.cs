@@ -2,16 +2,14 @@
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Text;
-
 using System.Collections.Generic;
 using System.Linq;
 using testTwo;
+using testThree;
 
 
 class Program
 {
-   
-
     static void Main(string[] args)
     {
         string line;
@@ -22,7 +20,6 @@ class Program
             {
                 case 1:
                     {
-                        //string str = "abaaabbbbbbskfkkkkkkkkkkkkkkkkrrttttttt       @@@@@@@@@eeeeeee   eeeeeererhjfhjhjhjsbfjehjrhkzldklfklskkkkuuuuuu";
                         string str = "abaaabbbkkkkkkkkrrtttbbbskfkkkkkkkktttt       @@@eererhjfhjheeee   eeeeejhjsbfjehjr@@@@@@eehkzldklfklskkkkuuuuuu          yyuhhjhhjhjgyyhjhjvvvvvdddrwmslxjjjjjjjjjj";
                         process_str(str);
                     }
@@ -33,14 +30,12 @@ class Program
                     }
                     break;
                 case 3:
-                    getMin();
+                    {
+                        getMin();
+                    }                    
                     break;
-            }
-            
-            Console.Read();
-        }
-        
-        
+            }            
+        }     
     }
 
     static void process_str(string str)
@@ -186,8 +181,8 @@ class Program
 
     static void getMin()
     {
-        int[] stackData = new int[] {2,40,5,8,9,50,4,19,25,34,44,1,1,5,6,18,47,60,555,22,33,88,44,25 };
-        test3 stack = new test3();
+        int[] stackData = new int[] {-2,40,5,8,9,50,4,19,25,34,44,1,1,5,6,18,47,60,555,22,33,88,44,25 };
+        test3 stack = new test3();//栈的默认大小是20
         for(int i = 0; i < stackData.Length; i++)
         {
             stack.push(stackData[i]);

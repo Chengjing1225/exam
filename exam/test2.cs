@@ -3,9 +3,7 @@ using System.Collections.Generic;
 
 namespace testTwo
 {
-    class test2
-    {
-    }
+   
     class Vector3
     {
         public float x, y, z;
@@ -31,20 +29,6 @@ namespace testTwo
             temp.z = (float)(z / (Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2) + Math.Pow(z, 2))));
             return temp;
         }
-
-
-    }
-    class resultInfo
-    {
-        public HashSet<int> pointIndexs { get; set; }
-        public int count { get; set; }
-
-        public resultInfo(HashSet<int> pointIndexs, int count)
-        {
-            this.pointIndexs = pointIndexs;
-            this.count = count;
-        }
-
     }
 
     class vecLineInfo

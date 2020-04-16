@@ -1,45 +1,48 @@
 ﻿using System.Collections.Generic;
 
-class test3
+namespace testThree
 {
-    int count = 0;
-    int maxNum = 20;
-    int minIndex = 0; 
-    List<int> stack = new List<int>();
-
-    public test3(int maxNum = 20)
+    class test3
     {
-        this.maxNum = maxNum;
-    }
+        int count = 0;
+        int maxNum = 20;
+        int minIndex = 0;
+        List<int> stack = new List<int>();
 
-    public void push(int value)
-    {
-        if(count == maxNum - 1)
+        public test3(int maxNum = 20)
         {
-            return;
+            this.maxNum = maxNum;
         }
-        if(count == 0)
+
+        public void push(int value)
         {
-            stack.Add(value);
-            count++;
+            if (count == maxNum - 1)
+            {
+                return;
+            }
+            if (count == 0)
+            {
+                stack.Add(value);
+                count++;
+            }
+            else
+            {
+                if (stack[minIndex] >= value)
+                    minIndex = count;
+                stack.Add(value);
+                count++;
+            }
         }
-        else
+
+        public int GetMin()
         {
-            if (stack[minIndex] >= value)
-                minIndex = count;
-            stack.Add(value);
-            count++;
+            return stack[minIndex];
+        }
+
+        public int pop()
+        {
+            return stack[count];
         }
     }
-
-    public int GetMin()
-    {
-        return stack[minIndex];
-    }
-
-    public int pop()
-    {
-        return stack[count];
-    }
-
 }
+
