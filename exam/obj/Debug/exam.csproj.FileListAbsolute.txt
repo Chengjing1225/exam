@@ -1,0 +1,7 @@
+F:\all_workspace\visual stdio projects\exam\exam\exam\bin\Debug\exam.exe.config
+F:\all_workspace\visual stdio projects\exam\exam\exam\bin\Debug\exam.exe
+F:\all_workspace\visual stdio projects\exam\exam\exam\bin\Debug\exam.pdb
+F:\all_workspace\visual stdio projects\exam\exam\exam\obj\Debug\exam.csprojAssemblyReference.cache
+F:\all_workspace\visual stdio projects\exam\exam\exam\obj\Debug\exam.csproj.CoreCompileInputs.cache
+F:\all_workspace\visual stdio projects\exam\exam\exam\obj\Debug\exam.exe
+F:\all_workspace\visual stdio projects\exam\exam\exam\obj\Debug\exam.pdb
